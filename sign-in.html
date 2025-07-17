@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign-in</title>
+	<link rel="stylesheet" type="text/css" href="./css/sign-in.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<link rel="icon" type="image/png" sizes="32x32" href="images/uniford.png">
+</head>
+<body>
+	<div class="container">
+		<div class="sign-in border">
+			<div class="logo">
+				<h3><strong>UNI<span>FORD</span></strong></h3>
+			</div>
+			 <form action="/action_page.php">
+			    <div class="mb-3 mt-3">
+			      <label for="email"><strong>Email:</strong></label>
+			      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+			    </div>
+			    <div class="mb-3">
+			      <label for="pwd"><strong>Password:</strong></label>
+			      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+			    </div>
+			    <div class="form-check mb-3">
+			      <label class="form-check-label remind">
+			        <input class="form-check-input" type="checkbox" name="remember">Remember me
+			      </label>
+			      <h6 class="f-pass"><a href="f-password.html">Forgot password?</a></h6>
+			    </div>
+			    <div id="sign-link" onclick="sign()" class="sign">
+			    	<h6><a href="index.html">SIGN IN</a></h6>
+			    </div>
+			   <div class="sign-up">
+			   	 <p>Don't have an account? <a class="sign2" href="form.html">Sign up</a></p>
+			   </div>
+			</form>
+		</div>
+	</div>
+
+
+	<script src="./bootstrap/js/bootstrap.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="./scripts/index.js"></script>
+
+</body>
+</html>

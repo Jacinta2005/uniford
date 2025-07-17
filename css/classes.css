@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "Roboto", sans-serif !important;
+}
+.logo h4 span{
+	color: #ff004f !important;
+}
+.logo{
+	padding-left: 1rem;
+	padding-top: 1rem;
+}
+.home2{
+	width: 100%;
+	min-height: 100vh;
+	background-color: whitesmoke;
+}
+.classes{
+	padding-top: 4rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+
+	h5{
+		
+	}
+}
+.activity{
+	padding-top: 2rem;
+	padding-left: 1rem;
+
+	h5{
+		font-weight: 700;
+	}
+}
+#act-p{
+	margin-top: -10px;
+}
+.act-text{
+	padding-top: 1rem;
+
+	p{
+		color: grey;
+	}
+	i{
+		color: #ff004f;
+		padding-right: 5px;
+	}
+}
+.act-text2{
+
+	p{
+		color: grey;
+	}
+	i{
+		color: #ff004f;
+		padding-right: 5px;
+	}
+}
+.act-text p span{
+	color: black;
+	font-weight: bold;
+}
+.act-text2 p span{
+	color: black;
+	font-weight: bold;
+}
+.links{
+	padding-top: 1.5rem;
+	margin-left: -12px !important;
+}
+#icon1{
+	color: #ff004f;
+}
+#link1{
+	font-weight: 700;
+	color: black;
+}
+.link1{
+	list-style: none;
+	padding-bottom: 2rem;
+	transiiton: 0.5s;
+	a{
+		text-decoration: none;
+		color: grey;
+		font-weight: 500;
+		padding-left: 5px;
+	}
+	i{
+		color: grey;
+	}
+}
+.link1:hover{
+	a{
+		color: #ff004f;
+	}
+	i{
+		color: #ff004f;
+	}
+}
+.return{
+	top: 61%;
+	position: relative;
+	padding-left: 10px;
+	transiiton: 0.5s;
+	a{
+		text-decoration: none;
+		color: grey;
+		font-weight: bold;
+	}
+	i{
+		color: grey;
+		padding-left: 3px;
+	}
+}
+.return:hover{
+	a{
+		color: #ff004f;
+	}
+	i{
+		color: #ff004f;
+	}
+}
+.box-1{
+	width: 100%;
+	min-height: 140px;
+	padding-top: 1rem;
+	padding-left: 1.5rem;
+	background-color: white;
+	font-size: 14px;
+	border-radius: 10px;
+	border: 1px solid #ff004f;
+	transition: transform 0.5s;
+
+	h6{
+		font-weight: 700;
+	}
+	i{
+		color: #ff004f;
+		padding-right: 5px;
+	}
+	p{
+		font-size: 17px;
+		font-weight: bold;
+	}
+}
+.box-1:hover{
+	transform: translateY(-8px);
+}
+#box-text{
+	font-size: 13px;
+	font-weight: 400;
+	color: grey;
+}
+.time-table{
+	margin-top: 4rem;
+	width: 100%;
+	min-height: 660px;
+	padding-top: 1rem;
+	padding-left: 1.5rem;
+	border-radius: 10px;
+	background-color: white;
+	border: 1px solid #ff004f;
+	transition: transform 0.5s;
+
+	h5{
+		font-weight: 700;
+	}
+}
+.time-table:hover{
+	transform: translateY(-8px);
+}
+.text-2{
+	p{
+		font-size: 13px;
+		float: right;
+		padding-right: 12px;
+		color: grey;
+	}
+}
+.days{
+	padding-top: 1rem;
+	margin-left: -2rem !important;
+}
+.box-2{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+	h6{
+		font-weight: bold;
+	}
+}
+#date-box{
+	background-color: #ff004f;
+	color: white;
+	border-radius: 10px;
+}
+.plan{
+	padding-top: 2rem;
+}
+.plan-2{
+	i{
+		color: #ff004f;
+		padding-right: 5px;
+	}
+	p{
+		color: grey;
+	}
+	h6{
+		font-weight: bold;
+	}
+}
+.plan-text{
+	margin-left: 3rem;
+}
+.plan-line{
+	border-bottom: 1px solid #ff004f;
+	width: 85%;
+	margin-bottom: 10px;
+}
+
+
+@media only screen and (min-width: 769px){
+	.mobile-view{
+		display: none !important;
+	}
+	.mobile-days{
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.mobile-view{
+		display: block !important;
+	}
+	.mobile-days{
+		display: block !important;
+	}
+	.desktop-view{
+		display: none !important;
+	}
+	.desktop-days{
+		display: none !important;
+	}
+	.logo{
+
+		h3{
+			top: -6px;
+			position: relative;
+		}
+	}
+	.logo h3 span{
+		color: #ff004f !important;
+	}
+	#dash-menu{
+		top: 2px;
+		position: relative;
+		font-size: 20px;
+		color: black;
+	}
+	.classes{
+		top: 30px;
+		position: relative;
+	}
+	.box-1{
+		margin-bottom: 2rem;
+	}
+	.box-2{
+		width: 200px !important;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 3px !important;
+	}
+	.time-table{
+		padding-right: 1.5rem;
+	}
+	.text-2{
+		p{
+			top: -1.5rem;
+			position: relative;
+		}
+	}
+	.plan{
+		padding-bottom: 2rem;
+	}
+	.home3{
+		padding-left: 2rem !important;
+	}
+	.activity{
+		margin-top: 7rem;
+		margin-bottom: 3rem;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+
+		h5{
+			border-bottom: 2px solid #ff004f;
+			width: 30%;
+			padding-bottom: 5px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+	#dash-close{
+		float: right;
+		top: -4rem;
+		right: 1rem;
+		position: relative;
+		font-size: 20px;
+		color: #ff004f;
+	}
+	.dash-m2{
+		margin-top: 5rem;
+	}
+	.dash-m2 li{
+		margin-bottom: 3rem !important;
+	}
+	.link1{
+		a{
+			color: black;
+		
+		}
+		i{
+			color: black;
+		}
+	}
+}

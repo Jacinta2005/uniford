@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+ *{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	min-height: 100vh;
+	background-image: linear-gradient(rgba(4,9,30,0.9),rgba(4,9,30,0.9)),url('../images/black.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	font-family: "Roboto", sans-serif !important;
+}
+.f-form{
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+	max-width: 700px !important;
+	min-height: 600px !important;
+	border-radius: 10px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+.form-label{
+	font-weight: bold;
+}
+.text{
+	text-align: center;
+
+	h3{
+		padding-top: 2rem;
+		font-weight: bold;
+	}
+}
+.policy{
+	top: -1rem;
+	position: relative;
+	padding-bottom: 1rem;
+}
+.register{
+	width: 300px !important;
+	height: 40px;
+	border-radius: 10px;
+	text-align: center;
+	background-color: white;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	top: -2rem;
+	position: relative;
+	padding-top: 2px;
+
+	a{
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+		top: 8px;
+		position: relative;
+	}
+}
+.register:hover{
+	background-color: #ff004f;
+	a{
+		color: white;
+	}
+}
+
+.form-check-input:checked{
+	background-color: #ff004f !important;
+	border-color: white !important;
+}
+

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UNIFORD</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<link rel="icon" type="image/png" sizes="32x32" href="images/uniford.png">
+</head>
+<body>
+	<div class="container-fluid navigation">
+		<div class="mobile-view" style="width: 100%; ">
+			<div style="position: fixed; display: flex; background-color: white; height: 50px; top: 0; z-index: 10; margin-left: -11px; width: 100%">
+				<div class="logo">
+					<h3><strong>UNI<span>FORD</span></strong></h3>
+				</div>
+				<div style="width: 100%; text-align: right; padding-right: 18px; padding-top: 9px">
+					<span style="cursor: pointer">
+						<i id="menu" style="color: black !important" class="bi bi-list"></i>
+						<i id="icon-search" style="color: black !important;" class="fa-solid fa-magnifying-glass"></i>
+					</span>
+				</div>
+			</div>
+
+			<div id="drop-menu" style="display: none;">
+				<div style="position: absolute; width: 100%; min-height: 100vh; background-color: white; right: 0px; top: 0; z-index: 100;">
+					<div style="padding: 10px">
+						<div>
+							<i id="close"class="fa-solid fa-xmark"></i>
+						<ul class="menu-n2">
+							<li class="menu-list1 line1"><a href="index.html">Home</a></li>
+							<li class="menu-list1 line1"><a href="news-events.html">News/Events</a></li>
+							<li id="pop-up" class="menu-list1 line1"><a href="program.html">Programs</a></li>
+							<li class="menu-list1 line1"><a href="admission.html">Admissions</a></li>
+							<li class="menu-list1 line1"><a href="contact.html">Contact us</a></li>
+							<li class="menu-list1 line1"><a href="sign-in.html">Sign-in</a></li>
+							<li id="second-menu" class="menu-list1 line1"><a href="#">Others</a></li>
+						</ul>
+						</div>
+					</div>
+			    </div>
+		    </div>
+
+			<div id="drop-program" style="display: none">
+				<div class="drop-program" style="position: absolute; width: 100%; background-color: white; z-index: 100;">
+					<div class="container-fluid program-text">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="program-image">
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="row"> 
+									<div class="col-md-4">
+										<div>
+											<ul class="p-text">
+												<li class="p-list"><a href="program.html">Our programs</a></li>
+												<li class="p-list"><a href="#">Medical science courses</a></li>
+												<li class="p-list"><a href="#">Law courses</a></li>
+												<li class="p-list"><a href="#">Management science courses</a></li>
+												<li class="p-list"><a href="#">Education courses</a></li>
+												<li class="p-list"><a href="#">Agriculture courses</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-4 p-text2">
+										<div>
+											<ul class="p-text">
+												<li class="p-list"><a href="#">Art courses</a></li>
+												<li class="p-list"><a href="#">Commercial courses</a></li>
+												<li class="p-list"><a href="#">Applied/Fine art courses</a></li>
+												<li class="p-list"><a href="#">Architecture/Environmental design courses</a></li>
+												<li class="p-list"><a href="#">Sciences courses</a></li>
+												<li class="p-list"><a href="#">Engineering courses</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-4 p-text2">
+										<div>
+											<ul class="p-text">
+												<li class="p-list"><a href="#">Social courses</a></li>
+												<li class="p-list"><a href="#">Accounting courses</a></li>
+												<li class="p-list"><a href="#">Humanities courses</a></li>
+												<li class="p-list"><a href="#">Administration courses</a></li>
+												<li class="p-list"><a href="#">Earth science courses</a></li>
+												<li class="p-list"><a href="#">Mass Communication courses</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="menu-div" style="display: none">
+				<div class="menu-div" style="position: absolute; right: 0px; top: 0; z-index: 100;">
+					<div class="menu-text1">
+						<div>
+							<i id="second-close"class="fa-solid fa-xmark"></i>
+							<ul class="menu-n">
+								<li class="menu-list1 line1"><a href="College.html">Student Life</a></li>
+								<li  class="menu-list1 line1"><a href="staff.html">Staffs</a></li>
+								<li  class="menu-list1 line1"><a href="alumni.html">Alumni</a></li>
+								<li  class="menu-list1 line1"><a href="portal.html">Student Portal</a></li>
+								<li  class="menu-list1 line1"><a href="about.html">About</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="search-div" style="display: none">
+				<div class="search-div" style="position: absolute; background-color: white; right: 0px; z-index: 100;">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12">
+								<div>
+									<i id="search-close" class="fa-solid fa-xmark x-mark"></i>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="s-item">
+									<form action="/action_page.php">
+										<div class="border-bottom search-b">
+											<i class="fa-solid fa-magnifying-glass"></i>
+									    	<input type="text" placeholder="Search.." class="s-b">
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="s-text1">
+									<h5>Suggested</h5>
+									<div>
+										<ul>
+											<li><a href="#">Our Programs</a></li>
+											<li><a href="#">Science course</a></li>
+											<li><a href="#">Art courses</a></li>
+											<li><a href="#">Admissions</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="s-text2">
+									<h5>Popular Terms</h5>
+									<div>
+										<ul>
+											<li><a href="about.html">About us</a></li>
+											<li><a href="college.html">Student Life</a></li>
+											<li><a href="alumni.html">Alumni</a></li>
+											<li><a href="news-events.html">News/events</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page">
+		<div class="container-fluid desktop-view">
+			<div class="row r-nav">
+				<div class="col-md-2">
+					<div class="logo">
+						<h3><strong>UNI<span>FORD</span></strong></h3>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="nav-bar">
+						<ul class=" nav nav-list">
+							<li class="nav-item item1"><a class="nav-link" href="#">Home</a></li>
+							<li class="nav-item item1"><a class="nav-link" href="news-events.html">News & Events</a></li>
+							<li id="program" class="nav-item item2"><a class="nav-link" href="#">Programs</a></li>
+							<li class="nav-item item2"><a class="nav-link" href="admission.html">Admissions</a></li>
+							<li class="nav-item item2"><a class="nav-link" href="contact.html">Contact us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="user">
+						<a id="s-icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+						<a href="sign-in.html"><i alt="log-in" class="fa-solid fa-user"></i></a>
+						<a id="menu1" href="#"><i class="fa-solid fa-bars"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="program-menu" style="display: none">
+			<div style="position: absolute; width: 100%; min-height: 300px; background-color: white; top: 47px; z-index: 100;">
+				<div class="container-fluid program-text">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="program-image">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="row"> 
+								<div class="col-md-4">
+									<div>
+										<ul class="p-text">
+											<li class="p-list"><a href="program.html">Our programs</a></li>
+											<li class="p-list"><a href="#">Medical science courses</a></li>
+											<li class="p-list"><a href="#">Law courses</a></li>
+											<li class="p-list"><a href="#">Management science courses</a></li>
+											<li class="p-list"><a href="#">Education courses</a></li>
+											<li class="p-list"><a href="#">Agriculture courses</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div>
+										<ul class="p-text">
+											<li class="p-list"><a href="#">Art courses</a></li>
+											<li class="p-list"><a href="#">Commercial courses</a></li>
+											<li class="p-list"><a href="#">Applied/Fine art courses</a></li>
+											<li class="p-list"><a href="#">Architecture/Environmental design courses</a></li>
+											<li class="p-list"><a href="#">Sciences courses</a></li>
+											<li class="p-list"><a href="#">Engineering courses</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div>
+										<ul class="p-text">
+											<li class="p-list"><a href="#">Social courses</a></li>
+											<li class="p-list"><a href="#">Accounting courses</a></li>
+											<li class="p-list"><a href="#">Humanities courses</a></li>
+											<li class="p-list"><a href="#">Administration courses</a></li>
+											<li class="p-list"><a href="#">Earth science courses</a></li>
+											<li class="p-list"><a href="#">Mass Communication courses</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="menu-box1" style="display: none";>
+			<div style="position: absolute; width: 300px; min-height: 100vh; background-color: white; right: 0px; top: 0; z-index: 100;">
+				<div class="menu-text1">
+					<div>
+						<i id="xmark"class="fa-solid fa-xmark"></i>
+						<ul class="menu-n">
+							<li class="menu-list1 line1"><a href="college.html">Student Life</a></li>
+							<li  class="menu-list1 line1"><a href="staff.html">Staffs</a></li>
+							<li  class="menu-list1 line1"><a href="alumni.html">Alumni</a></li>
+							<li  class="menu-list1 line1"><a href="portal.html">Student Portal</a></li>
+							<li  class="menu-list1 line1"><a href="about.html">About</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="s-box" style="display: none">
+			<div style="position: absolute; width: 60%; min-height: 400px; background-color: white; right: 0px; top: 47px; z-index: 100;">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<div>
+								<i id="xmark2" class="fa-solid fa-xmark x-mark"></i>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="s-item">
+								<form action="/action_page.php">
+									<div class="border-bottom search-b">
+										<i class="fa-solid fa-magnifying-glass"></i>
+								    	<input type="text" placeholder="Search.." class="s-b">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="s-text1">
+								<h5>Suggested</h5>
+								<div>
+									<ul>
+										<li><a href="#">Our Programs</a></li>
+										<li><a href="#">Science course</a></li>
+										<li><a href="#">Art courses</a></li>
+										<li><a href="#">Admissions</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="s-text2">
+								<h5>Popular Terms</h5>
+								<div>
+									<ul>
+										<li><a href="about.html">About us</a></li>
+										<li><a href="college.html">Student Life</a></li>
+										<li><a href="alumni.html">Alumni</a></li>
+										<li><a href="news-events.html">News/events</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid home">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-10">
+							<div class="name">
+								<h1><i class="fa-solid fa-graduation-cap"></i>UNI<span>FORD</span><br>UNIVERSITY</h1>
+								<p>Excellence in education, research, and community engagement is at the heart of everything we do.<br>Our commitment to fostering a transformative learning environment has resulted in consistent <br>growth and achievement across multiple dimensions.</p>
+							</div>
+							<div class="learn">
+								<p><a href="#">Learn more</a></p>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="row">
+								<div class="col-md-12 name-text">
+									<p>Uniford</strong> has proudly secured its place as one of the top eight universities in Africa, an achievement that speaks volumes about its commitment to excellence, innovation, and leadership in higher education.</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 name-text2">
+									<p>Whether you're beginning your academic journey or advancing your career, Uniford offers a diverse and inclusive community to support you every step of the way.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid news">
+		<div class="row">
+			<div class="col-md-9 news1">
+				<div class="row n-link">
+					<div class="col-md-2">
+						<h1>News</h1>
+					</div>
+					<div class="col-md-10">
+						<h6 class="s-line2"><a href="news-events.html">All News</a></h6>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 n1">
+						<div class="pic1">
+						</div>
+						<p>First vaccines against blood-stage Malaria is well-tolerated and offers effective protection</p>
+						<h6>29 NOV 2024</h6>
+					</div>
+					<div class="col-md-4 n2">
+						<div class="pic2">
+						</div>
+						<p>Uniford and partners lead on two new centres to create cutting edge gene therapies</p>
+						<h6>10 DEC 2024</h6>
+					</div>
+					<div class="col-md-4 n3">
+						<div class="pic3">
+						</div>
+						<p>Uniford students at annual R-SPORTS</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 events">
+				<div class="row n-link2">
+					<div class="col-md-5">
+						<h1>Events</h1>
+					</div>
+					<div class="col-md-7">
+						<h6 class="s-line"><a href="news-events.html">All Events</a></h6>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row r-1">
+							<div class="col-md-3 date1">
+								<div class="c-box" id="c-box">11<br><span>DEC</span></div>
+							</div>
+							<div class="col-md-9">
+								<h5>Scholar's library: Nadine Robert on 'When the sparrow sings'</h5>
+								<h6>Rhodes Trust - Online Event</h6>
+								<p>11 DEC 2024</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row r-2">
+							<div class="col-md-3 date2">
+								<div class="c-box">18<br><span>JAN</span></div>
+							</div>
+							<div class="col-md-9">
+								<h5>Timeless time: The New Science on the Body Clock and how it can improve your health</h5>
+								<h6>Aubrey Library</h6>
+								<p>18 JAN 2024</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container-fluid discover">
+		<h1>Discover</h1>
+		<div class="wrapper">
+			<i id="left" class="fa-solid fa-angle-left"></i>
+			<ul class="carousel">
+				<li class="card-1">
+					<div class="dis-img1" draggable="false"></div>
+					<h3>Sport News</h3>
+					<p>Overall winner; Mr Frederick Leonardo at the 2025 annual college subsidiary sports olympics race event.</p>
+				</li>
+				<li class="card-1">
+					<div class="dis-img2" draggable="false"></div>
+					<h3>Biology News</h3>
+					<p>Progressive breakthrough in the reasearch of <br>the human body with more emphasis on skeletal and nervous systems.</p>
+				</li>
+				<li class="card-1">
+					<div class="dis-img3" draggable="false"></div>
+					<h3>Project Development</h3>
+					<p>Pending projects concerning redevelopment <br>for some of our school's halls have kick-started and on-going.</p>
+				</li>
+				<li class="card-1">
+					<div class="dis-img4" draggable="false"></div>
+					<h3>Office Appointment</h3>
+					<p>Interview with the recent appointed Student's Affairs Administrator in his new assigned office.</p>
+				</li>
+				<li class="card-1">
+					<div class="dis-img5" draggable="false"></div>
+					<h3>Fruit's Vitality</h3>
+					<p>Research has both proven in the past and present that eating fruits regularly improves and boosts health.</p>
+				</li>
+				<li class="card-1">
+					<div class="dis-img6" draggable="false"></div>
+					<h3>Protests against Racism</h3>
+					<p>Students protests against racism have been not a violent one as they express their opinions against act.</p>
+				</li>
+				<li class="card-1">
+					<div class="dis-img7" draggable="false"></div>
+					<h3>Water's Essence</h3>
+					<p>Water has been known as an essence of life but research  has further proven it has more outstanding benefits.</p>
+				</li>
+				<li class="card-1">
+					<div class="dis-img8" draggable="false"></div>
+					<h3>Health Awareness</h3>
+					<p>Student's conference organised/sponsored by WHO on health awareness and the progress on the medical research field.</p>
+				</li>
+			</ul>
+			<i id="right" class="fa-solid fa-angle-right"></i>
+		</div>
+	</div>
+
+	<div class="container-fluid color-home">
+		<div class="row home-row" style="background-color: #ff004f">
+				<div class="col-md-6 home-image">
+				</div>
+				<div class="col-md-6">
+					<div class="home-text">
+						<h1>Study with us here at<br><span>Uniford University</span></h1>
+						<p>Choosing <strong>Uniford</strong> as your <strong>1st choice</strong> University is a win-win for your career. We offer the best to our students, giving them the best learning environment and opportunities.</p>
+						<p>Gain the knowledge and experience you need to stand out to graduate employers and make a difference by solving real global business challenges and demonstrating pratical application of your learning with a <a href="#" class="h-link">Certified Degree</a></p>
+						<p>We are dedicated to providing our students with a wide range of academic programs designed to nurture their intellectual growth, practical skills, and career aspirations. </p>
+						<p>At <strong>Uniford</strong>, we offer a diverse range of academic programs designed to equip students with the knowledge, skills, and experiences necessary to succeed in today’s dynamic world.</p>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<div class="container-fluid education">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="edu1">
+					<div class="card-body">
+						<div class="card-text">
+							<h3><a href="#">Undergraduate <br>study <i class="fa-solid fa-arrow-right"></i></a></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="edu2">
+					<div class="card-body">
+						<div class="card-text">
+							<h3><a href="#">Continuing <br>education <i class="fa-solid fa-arrow-right"></i></a></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="edu3">
+					<div class="card-body">
+						<div class="card-text">
+							<h3><a href="#">Current Uniford <br>students <i class="fa-solid fa-arrow-right"></i></a></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="edu4">
+					<div class="card-body">
+						<div class="card-text">
+							<h3><a href="#">Graduate <br>study <i class="fa-solid fa-arrow-right"></i></a></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class=" container-fluid bg-white research">
+		<h1>Our researchers are changing the world for the better</h1>
+		<div class="row research-display">
+			<div class="col-md-6">
+				<div class="research-text">
+					<h3>Revealing space's secret supermassive black holes</h3>
+					<div class="research-btn">
+						<p>Space</p>
+					</div>
+					<h6>Scientists from the University of Uniford have found that they are hidden supermassive black holes in universe than previously thought. With numbers increasing rapidly than normal compared to the past, discoveries and theories have made that this could become a fatal problem.</h6>
+					<a href="#">Read more <i class="fa-solid fa-arrow-right"></i></a>
+				</div>
+			</div>
+			<div class="col-md-6 research-image">
+			</div>
+		</div>
+		<div class="row  research-links">
+			<div class="col-md-6">
+				<div class="research-1">
+					<h6>Explore the impact of our research <i class="fa-solid fa-arrow-right"></i></h6>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="research-1" id="research-1">
+					<h6>Discover PhD's and research degrees <i class="fa-solid fa-arrow-right"></i></h6>
+				</div>
+			</div>
+		</div>
+		<div class="row research-links2">
+			<div class="col-md-6">
+				<div class="research-1">
+					<h6>Find people and expertise <i class="fa-solid fa-arrow-right"></i></h6>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="research-1" id="research-1">
+					<h6>Get to know our resarch facilities <i class="fa-solid fa-arrow-right"></i></h6>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid rank">
+		<div class="row">
+			<div class="col-md-6 rank-text">
+				<h2>Ranked top 8th university in Africa</h2>
+				<p><strong>Uniford</strong> has proudly secured its place as one of the top eight universities in Africa, an achievement that speaks volumes about its commitment to excellence, innovation, and leadership in higher education. This prestigious ranking highlights the university’s remarkable contributions to research, academic quality, and the development of future leaders who are making an impact globally.<br>The recognition comes as a result of the university's exceptional academic programs, distinguished faculty, state-of-the-art facilities, and groundbreaking research initiatives that address critical challenges in Africa and beyond. The university is renowned for its focus on providing a world-class education that blends academic rigor with real-world applications, preparing students to excel in a rapidly changing global landscape.</p>
+			</div>
+			<div class="col-md-6">
+				<div class="grad">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid footer">
+		<div class="row" style="border-bottom: 1px solid black;">
+			<div class="col-md-2">
+				<h5>Connect with us</h5>
+			</div>
+			<div class="col-md-5 social-icons">
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-square-instagram"></i>
+				<i class="fa-brands fa-square-twitter"></i>
+				<i class="fa-brands fa-pinterest"></i>
+				<i class="fa-brands fa-linkedin"></i>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4 footer1">
+				<p>Information About</p>
+				<div>
+					<h6>Uniford University</h6>
+					<h6>Strategic plan</h6>
+					<h6>Uniford's research</h6>
+					<h6>Course fees and funding</h6>
+					<h6>Libraries</h6>
+					<h6>Museums and collections</h6>
+					<h6>Open days</h6>
+					<h6>Uniford glossary</h6>
+					<h6>Freedom of speech statement</h6>
+					<h6>Sport at Uniford</h6>
+					<h6>Data privacy/GDPR</h6>
+				</div>
+			</div>
+			<div class="col-md-4 footer1">
+				<p>Information For</p>
+				<div>
+					<h6>Prospective undergraduates</h6>
+					<h6>Prospective graduate students</h6>
+					<h6>Current Uniford students</h6>
+					<h6>Current Uniford staffs</h6>
+					<h6>Uniford residents/Communities</h6>
+					<h6>Visitors/Tourists</h6>
+					<h6>Media</h6>
+					<h6>Alumni</h6>
+					<h6>Teachers</h6>
+					<h6>Parliamentaries</h6>
+					<h6>Partnerships</h6>
+				</div>
+			</div>
+			<div class="col-md-4 footer1">
+				<p>Quick Links</p>
+				<div>
+					<h6>Any questions?</h6>
+					<h6>Jobs and vacancies</h6>
+					<h6>Map</h6>
+					<h6>Term dates</h6>
+					<h6>Uni365 email</h6>
+					<h6>Giving to Uniford</h6>
+				</div>
+			</div>
+		</div>
+
+		<div class="row footer2" style="border-top: 1px solid black;">
+			<div class="col-md-2">
+				<p>Uniford 2024</p>
+			</div>
+			<div class="col-md-2">
+				<p>Contact us</p>
+			</div>
+			<div class="col-md-2">
+				<p>About this site</p>
+			</div>
+			<div class="col-md-2">
+				<p>Legal</p>
+			</div>
+			<div class="col-md-2">
+				<p>Privacy policy</p>
+			</div>
+			<div class="col-md-2">
+				<p>Cookie settings</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<script src="./bootstrap/js/bootstrap.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="./scripts/index.js"></script>
+
+</body>
+</html>

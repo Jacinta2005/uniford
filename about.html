@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+	<link rel="stylesheet" type="text/css" href="./css/about.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<link rel="icon" type="image/png" sizes="32x32" href="images/uniford.png">
+</head>
+<body>
+	<div class="page">
+		<div class="container-fluid navigation">
+		<div class="mobile-view" style="width: 100%; ">
+			<div style="position: fixed; display: flex; background-color: white; height: 50px; top: 0; z-index: 10; margin-left: -11px; width: 100%">
+				<div class="logo">
+					<h3><strong>UNI<span>FORD</span></strong></h3>
+				</div>
+				<div style="width: 100%; text-align: right; padding-right: 10px; padding-top: 9px">
+					<span style="cursor: pointer">
+						<i id="mb-menu" style="color: black !important" class="bi bi-list"></i>
+						<i id="mb-sbox" style="color: black;" class="fa-solid fa-magnifying-glass"></i>
+					</span>
+				</div>
+			</div>
+
+			<div id="mb-box" style="display: none;">
+				<div style="position: absolute; width: 100%; min-height: 100vh; background-color: white; right: 0px; top: 0; z-index: 100;">
+					<div style="padding: 10px">
+						<div>
+							<i id="mb-xmark"class="fa-solid fa-xmark"></i>
+						<ul class="menu-n2">
+							<li class="menu-list1 line1"><a href="index.html">Home</a></li>
+							<li class="menu-list1 line1"><a href="news-events.html">News/Events</a></li>
+							<li id="pop-up" class="menu-list1 line1"><a href="program.html">Programs</a></li>
+							<li class="menu-list1 line1"><a href="admission.html">Admissions</a></li>
+							<li class="menu-list1 line1"><a href="contact.html">Contact us</a></li>
+							<li class="menu-list1 line1"><a href="sign-in.html">Sign-in</a></li>
+							<li id="m-vbox" class="menu-list1 line1"><a href="#">Others</a></li>
+						</ul>
+						</div>
+					</div>
+			    </div>
+		    </div>
+		    <div id="drop-program" style="display: none">
+				<div class="drop-program" style="position: absolute; width: 100%; background-color: white; z-index: 100;">
+					<div class="container-fluid program-text">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="program-image">
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="row"> 
+									<div class="col-md-4">
+										<div>
+											<ul class="p-text">
+												<li class="p-list"><a href="program.html">Our programs</a></li>
+												<li class="p-list"><a href="#">Medical science courses</a></li>
+												<li class="p-list"><a href="#">Law courses</a></li>
+												<li class="p-list"><a href="#">Management science courses</a></li>
+												<li class="p-list"><a href="#">Education courses</a></li>
+												<li class="p-list"><a href="#">Agriculture courses</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-4 p-text2">
+										<div>
+											<ul class="p-text">
+												<li class="p-list"><a href="#">Art courses</a></li>
+												<li class="p-list"><a href="#">Commercial courses</a></li>
+												<li class="p-list"><a href="#">Applied/Fine art courses</a></li>
+												<li class="p-list"><a href="#">Architecture/Environmental design courses</a></li>
+												<li class="p-list"><a href="#">Sciences courses</a></li>
+												<li class="p-list"><a href="#">Engineering courses</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-4 p-text2">
+										<div>
+											<ul class="p-text">
+												<li class="p-list"><a href="#">Social courses</a></li>
+												<li class="p-list"><a href="#">Accounting courses</a></li>
+												<li class="p-list"><a href="#">Humanities courses</a></li>
+												<li class="p-list"><a href="#">Administration courses</a></li>
+												<li class="p-list"><a href="#">Earth science courses</a></li>
+												<li class="p-list"><a href="#">Mass Communication courses</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid desktop-view">
+			<div class="row r-nav">
+				<div class="col-md-2">
+					<div class="logo">
+						<h3><strong>UNI<span>FORD</span></strong></h3>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="nav-bar">
+						<ul class=" nav nav-list">
+							<li class="nav-item item2"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item item2"><a class="nav-link" href="news-events.html">News & Events</a></li>
+							<li id="program" class="nav-item item2"><a class="nav-link" href="#">Programs</a></li>
+							<li class="nav-item item2"><a class="nav-link" href="admission.html">Admissions</a></li>
+							<li class="nav-item item2"><a class="nav-link" href="contact.html">Contact us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="user">
+						<a id="s-icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+						<a href="sign-in.html"><i alt="log-in" class="fa-solid fa-user"></i></a>
+						<a id="menu1" href="#"><i class="fa-solid fa-bars"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="program-menu" style="display: none">
+			<div class="program-menu" style="position: absolute; width: 100%; min-height: 300px; background-color: white; top: 47px; z-index: 100;">
+				<div class="container-fluid program-text">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="program-image">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="row"> 
+								<div class="col-md-4">
+									<div>
+										<ul class="p-text">
+											<li class="p-list"><a href="program.html">Our programs</a></li>
+											<li class="p-list"><a href="#">Medical science courses</a></li>
+											<li class="p-list"><a href="#">Law courses</a></li>
+											<li class="p-list"><a href="#">Management science courses</a></li>
+											<li class="p-list"><a href="#">Education courses</a></li>
+											<li class="p-list"><a href="#">Agriculture courses</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-4 p-text2">
+									<div>
+										<ul class="p-text">
+											<li class="p-list"><a href="#">Art courses</a></li>
+											<li class="p-list"><a href="#">Commercial courses</a></li>
+											<li class="p-list"><a href="#">Applied/Fine art courses</a></li>
+											<li class="p-list"><a href="#">Architecture/Environmental design courses</a></li>
+											<li class="p-list"><a href="#">Sciences courses</a></li>
+											<li class="p-list"><a href="#">Engineering courses</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-4 p-text2">
+									<div>
+										<ul class="p-text">
+											<li class="p-list"><a href="#">Social courses</a></li>
+											<li class="p-list"><a href="#">Accounting courses</a></li>
+											<li class="p-list"><a href="#">Humanities courses</a></li>
+											<li class="p-list"><a href="#">Administration courses</a></li>
+											<li class="p-list"><a href="#">Earth science courses</a></li>
+											<li class="p-list"><a href="#">Mass Communication courses</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="menu-box1" style="display: none">
+			<div class="menu-box1" style="position: absolute; width: 300px; min-height: 100vh; background-color: white; right: 0px; top: 0; z-index: 100;">
+				<div class="menu-text1">
+					<div>
+						<i id="xmark"class="fa-solid fa-xmark"></i>
+						<ul class="menu-n">
+							<li class="menu-list1 line1"><a href="college.html">Student Life</a></li>
+							<li  class="menu-list1 line1"><a href="staff.html">Staffs</a></li>
+							<li  class="menu-list1 line1"><a href="alumni.html">Alumni</a></li>
+							<li  class="menu-list1 line1"><a href="portal.html">Student Portal</a></li>
+							<li  class="menu-list1 line1"><a href="#">About</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="s-box" style="display: none">
+			<div class="s-box" style="position: absolute; width: 60%; min-height: 400px; background-color: white; right: 0px; top: 47px; z-index: 100;">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<div>
+								<i id="xmark2" class="fa-solid fa-xmark x-mark"></i>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="s-item">
+								<form action="/action_page.php">
+									<div class="border-bottom search-b">
+										<i class="fa-solid fa-magnifying-glass"></i>
+								    	<input type="text" placeholder="Search.." class="s-b">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="s-text1">
+								<h5>Suggested</h5>
+								<div>
+									<ul>
+										<li><a href="#">Our Programs</a></li>
+										<li><a href="#">Science course</a></li>
+										<li><a href="#">Art courses</a></li>
+										<li><a href="#">Admissions</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="s-text2">
+								<h5>Popular Terms</h5>
+								<div>
+									<ul>
+										<li><a href="about.html">About us</a></li>
+										<li><a href="college.html">Student Life</a></li>
+										<li><a href="alumni.html">Alumni</a></li>
+										<li><a href="news-events.html">News/events</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid home">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+					  <div class="carousel-indicators">
+					    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+					    <div class="carousel-item active carousel1">
+					    	<div class="card-body">
+					    		<div class="card-text">
+					    			<h1>Overall best graduating student</h1>
+					    			<p>Miss Cynthia Andrew</p>
+					    		</div>
+					    	</div>
+					    </div>
+					    <div class="carousel-item carousel2">
+					    	<div class="card-body">
+					    		<div class="card-text">
+					    			<h1>New Admin officers of Uniford UnIversity</h1>
+					    			<p>Mr Charles Grey and Mr Joseph Stone</p>
+					    		</div>
+					    	</div>
+					    </div>
+					     <div class="carousel-item carousel3">
+					    	<div class="card-body card-body2">
+					    		<div class="card-text">
+					    			<h1>Uniford students</h1>
+					    			<p>Campus life here at Uniford</p>
+					    		</div>
+					    	</div>
+					    </div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid mission">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="mission-1">
+						<h2>Mission</h2>
+						<p>Uniford is dedicated to fostering a transformative educational experience that empowers students to become innovative, and compassionate leaders. Through rigorous academics, hands-on learning, and a commitment to diversity and inclusion, we strive to cultivate critical thinkers who will contribute meaningfully to their communities and the global society. Our university embraces the pursuit of knowledge, and personal growth, preparing students for success in an ever-evolving world.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="mission-1">
+						<h2>Vision</h2>
+					    <p>Our vision is to be a globally recognized institution that shapes the future through transformative education and a commitment to social responsibility. We aim to cultivate a dynamic learning environment that inspires creativity, and prepares students to address the world’s most pressing challenges. By nurturing leaders of tomorrow who are intellectually curious and socially conscious, we aspire to create a positive impact on society and contribute to the advancement of knowledge and culture.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="mission-1">
+						<h2>Values</h2>
+					    <p>At Uniford, we are committed to fostering excellence in education, research, social improvement and community engagement. We uphold integrity, ensuring ethical standards in all academic and personal endeavors. Our diverse and inclusive environment values individuals of all backgrounds and perspectives, while promoting collaboration to achieve common goals. Innovation drives our approach, encouraging creativity and forward-thinking in solving various society and global challenges.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid history">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="line">Uniford's History</h1>
+					<p>Founded in 1988, Uniford has a rich history of academic excellence, innovation, and community impact. What began as a small institution dedicated to give students knowledge has grown into one of the leading universities in Africa, renowned for its diverse academic programs and commitment to shaping future leaders. <br>Over the years, the university has expanded its campus, introduced cutting-edge research initiatives, and developed strong connections with industries and global academic communities. Our legacy is built on a foundation of rigorous scholarship, a passion for discovery, and a dedication to the holistic development of students. <br>From its early years as a small tertiary school setup to becoming a modern hub for learning and innovation, Uniford continues to honor its founding principles while adapting to the evolving needs of the global educational landscape. <br>Today, we are proud of our history and the talented graduates who carry forward the university’s mission of excellence in their respective fields, contributing meaningfully to society and the world.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid sports">
+			<div class="row">
+				<div class="col-md-5">
+					<p>Uniford fields a number of competitive sports teams that regularly participate in regional and national tournaments. These teams include football, basketball, soccer, tennis, etc. Each team is coached by experienced professionals who guide students in honing their skills, building team spirit, and achieving excellence in their respective sports. We encourage student-athletes to push their limits, while also balancing academics and personal development.<br>For students who prefer a more relaxed approach to sports, we offer recreational leagues and intramural programs in various sports. Whether it’s a friendly game of badminton, tennis, or a co-ed soccer match, these activities provide a great way to stay active and socialize. Intramural sports allow students of all skill levels to compete in a less intense environment, promoting fitness and camaraderie among peers. Throughout the academic year, we organize a number of health and wellness events to promote a balanced lifestyle. These events include fitness challenges, sports tournaments, and workshops on mental well-being.</p>
+				</div>
+				<div class="col-md-7 s-images">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="image1">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="image2">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="image3">
+							</div>
+						</div>
+					</div>
+
+					<div class="row sports2">
+						<div class="col-md-4">
+							<div class="image4">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="image5">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="image6">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid icon-log">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="box1">
+						<i class="fa-solid fa-school icon1"></i>
+						<h2><strong>My Uniford</strong></h2>
+						<p>Get exclusive discounts and offers, request your My Uniford Card, login to My Oxford Online and more</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box1 box2">
+						<i class="fa-solid fa-calendar icon1"></i>
+						<h2><strong>Find an event</strong></h2>
+						<p>From Meeting Minds through to our Armchair Travel series, join us discover our many events</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box1 box2">
+						<i class="fa-solid fa-people-group icon1"></i>
+						<h2><strong>Join a group</strong></h2>
+						<p>With more than 200 regional alumni groups in over 90 countries, you're sure to find Unifordians near you</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row icon-log2">
+				<div class="col-md-4">
+					<div class="box1 box2">
+						<i class="fa-solid fa-newspaper icon1"></i>
+						<h2><strong>Ford News</strong></h2>
+						<p>Your digital alumni and college magazine with features, articles and opinion from around the University</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box1 box2">
+						<i class="fa-solid fa-gift icon1"></i>
+						<h2><strong>Discounts/offers</strong></h2>
+						<p>We have a great range of resources and exclusive discounts available for Uniford alumni, students and associates</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box1 box2">
+						<i class="fa-solid fa-graduation-cap icon1"></i>
+						<h2><strong>Eligibility</strong></h2>
+						<p>Explore the perks accessible to University of Uniford students, staffs,alumni and associates</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row icon-log3">
+				<div class="col-md-4">
+					<div class="box1 box2">
+						<i class="fa-solid fa-dungeon icon1"></i>
+						<h2><strong>Student Benefits</strong></h2>
+						<p>Our exclusive benefits and perks for matriculated students, alumni and staffs the university</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box1 box2">
+						<i class="fa-solid fa-credit-card icon1"></i>
+						<h2><strong>My Uniford Card</strong></h2>
+						<p>Your key back to Uniford- Discover two affiliation levels: alumni or associate. check your eligibility</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box1 box2">
+						<i class="fa-solid fa-layer-group icon1"></i>
+						<h2><strong>Benefit programs</strong></h2>
+						<p>Our exclusive scholarship program benefit solely based on registration and exams for new incoming students</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid footer">
+			<div class="row" style="border-bottom: 1px solid black;">
+				<div class="col-md-2">
+					<h5>Connect with us</h5>
+				</div>
+				<div class="col-md-5 social-icons">
+					<i class="fa-brands fa-facebook"></i>
+					<i class="fa-brands fa-square-instagram"></i>
+					<i class="fa-brands fa-square-twitter"></i>
+					<i class="fa-brands fa-pinterest"></i>
+					<i class="fa-brands fa-linkedin"></i>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 footer1">
+					<p>Information About</p>
+					<div>
+						<h6>Uniford University</h6>
+						<h6>Strategic plan</h6>
+						<h6>Uniford's research</h6>
+						<h6>Course fees and funding</h6>
+						<h6>Libraries</h6>
+						<h6>Museums and collections</h6>
+						<h6>Open days</h6>
+						<h6>Uniford glossary</h6>
+						<h6>Freedom of speech statement</h6>
+						<h6>Sport at Uniford</h6>
+						<h6>Data privacy/GDPR</h6>
+					</div>
+				</div>
+				<div class="col-md-4 footer1 footer-1">
+					<p>Information For</p>
+					<div>
+						<h6>Prospective undergraduates</h6>
+						<h6>Prospective graduate students</h6>
+						<h6>Current Uniford students</h6>
+						<h6>Current Uniford staffs</h6>
+						<h6>Uniford residents/Communities</h6>
+						<h6>Visitors/Tourists</h6>
+						<h6>Media</h6>
+						<h6>Alumni</h6>
+						<h6>Teachers</h6>
+						<h6>Parliamentaries</h6>
+						<h6>Partnerships</h6>
+					</div>
+				</div>
+				<div class="col-md-4 footer1 footer-1">
+					<p>Quick Links</p>
+					<div>
+						<h6>Any questions?</h6>
+						<h6>Jobs and vacancies</h6>
+						<h6>Map</h6>
+						<h6>Term dates</h6>
+						<h6>Uni365 email</h6>
+						<h6>Giving to Uniford</h6>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footer2" style="border-top: 1px solid black;">
+				<div class="col-md-2">
+					<p>Uniford 2024</p>
+				</div>
+				<div class="col-md-2">
+					<p class="p-footer">Contact us</p>
+				</div>
+				<div class="col-md-2">
+					<p class="p-footer">About this site</p>
+				</div>
+				<div class="col-md-2">
+					<p class="p-footer">Legal</p>
+				</div>
+				<div class="col-md-2">
+					<p class="p-footer">Privacy policy</p>
+				</div>
+				<div class="col-md-2">
+					<p class="p-footer">Cookie settings</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="./bootstrap/js/bootstrap.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="./scripts/index.js"></script>
+
+</body>
+</html>

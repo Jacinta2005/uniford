@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Messages</title>
+	<link rel="stylesheet" type="text/css" href="./css/message.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<link rel="icon" type="image/png" sizes="32x32" href="images/uniford.png">
+</head>
+<body>
+	<div class="container-fluid navigation">
+		<div class="mobile-view" style="width: 100%; ">
+			<div id="logo" style="position: fixed; display: flex; background-color: white; height: 50px; top: 0; z-index: 10; margin-left: -11px; width: 100%; border-bottom: 1px solid #ff004f">
+				<div class="logo">
+					<h3><strong>UNI<span>FORD</span></strong></h3>
+				</div>
+				<div style="width: 100%; text-align: right; padding-right: 15px; padding-top: 9px;">
+					<span style="cursor: pointer">
+						<i id="dash-menu" style="color: black !important" class="bi bi-list"></i>
+					</span>
+				</div>
+			</div>
+
+			<div id="dash-drop" style="display: none;">
+				<div style="position: absolute; width: 100%; min-height: 100vh; background-color: white; right: 0px; top: 0; z-index: 100;">
+					<div style="padding: 10px">
+						<div>
+							<i id="dash-close"class="fa-solid fa-xmark"></i>
+						<ul class="dash-m2">
+							<li class="link1"><i class="fa-solid fa-table-columns"></i> <a href="dashboard.html">Dashboard</a></li>
+							<li class="link1"><i class="fa-solid fa-file"></i> <a href="classes.html">Classes</a></li>
+							<li class="link1"><i class="fa-solid fa-calendar" id="icon1"></i> <a href="#" id="link1">Planning</a></li>
+							<li class="link1"><i class="fa-solid fa-house"></i> <a href="index.html">Home</a></li>
+						</ul>
+						</div>
+					</div>
+			    </div>
+		    </div>
+		    
+		   	<div class="container-fluid dash-messages">
+		   		<div class="row">
+		   			<div class="col-md-12 home1">
+						<div class="chat">
+							<div class="row chat-row">
+								<div class="col-md-12">
+									<div class="chat-box">
+										<div class="chat-line">
+											<div class="row">
+												<div class="col-md-1">
+													<div class="image1">
+													</div>
+												</div>
+												<div class="col-md-11">
+													<div class="image-text">
+														<h6><a href="#" id="dash-chat">Tehilla❤</a></h6>
+														<p>You: What time is Geography class?</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="chat-line">
+											<div class="row name">
+												<div class="col-md-1">
+													<div class="image2">
+													</div>
+												</div>
+												<div class="col-md-11">
+													<div class="image-text">
+														<h6><a href="#">Sarah</a></h6>
+														<p>Auditions are by 4pm, don't be late...</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="chat-line">
+											<div class="row name">
+												<div class="col-md-1">
+													<div class="image3">
+													</div>
+												</div>
+												<div class="col-md-11">
+													<div class="image-text">
+														<h6><a href="#">Mr Jacob</a></h6>
+														<p>Tell your coursemates, the assignments...</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="chat-line">
+											<div class="row name">
+												<div class="col-md-1">
+													<div class="image4">
+													</div>
+												</div>
+												<div class="col-md-11">
+													<div class="image-text">
+														<h6><a href="#">Victoria</a></h6>
+														<p>Are you in dorm, hit me up 😊</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="chat-line">
+											<div class="row name">
+												<div class="col-md-1">
+													<div class="image5">
+													</div>
+												</div>
+												<div class="col-md-11">
+													<div class="image-text">
+														<h6><a href="#">Jace</a></h6>
+														<p>Hey 😌</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="chat-line">
+											<div class="row name">
+												<div class="col-md-1">
+													<div class="image6">
+													</div>
+												</div>
+												<div class="col-md-11">
+													<div class="image-text">
+														<h6><a href="#">Greg</a></h6>
+														<p>Are you coming for the game tomorrow?</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="chat-line">
+											<div class="row name">
+												<div class="col-md-1">
+													<div class="image7">
+													</div>
+												</div>
+												<div class="col-md-11">
+													<div class="image-text">
+														<h6><a href="#">Rose</a></h6>
+														<p>You: 😂😂😂</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="chat-line">
+											<div class="row name">
+												<div class="col-md-1">
+													<div class="image8">
+													</div>
+												</div>
+												<div class="col-md-11">
+													<div class="image-text">
+														<h6><a href="#">Mrs Winifred</a></h6>
+														<p>Revision for C.A.T starts tomorrow</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="chat-line">
+											<div class="row name">
+												<div class="col-md-1">
+													<div class="image9">
+													</div>
+												</div>
+												<div class="col-md-11">
+													<div class="image-text">
+														<h6><a href="#">Jessica</a></h6>
+														<p>How are you doing?</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="chat-line">
+											<div class="row name">
+												<div class="col-md-1">
+													<div class="image10">
+													</div>
+												</div>
+												<div class="col-md-11">
+													<div class="image-text">
+														<h6><a href="#">Brian</a></h6>
+														<p>I will be at the library by 2</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="chat-line">
+											<div class="row name">
+												<div class="col-md-1">
+													<div class="image11">
+													</div>
+												</div>
+												<div class="col-md-11">
+													<div class="image-text">
+														<h6><a href="#">Basketball Aces🌝 </a></h6>
+														<p>Amelia: Why do we suddenly have a gr...</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="chat-line">
+											<div class="row name">
+												<div class="col-md-1">
+													<div class="image12">
+													</div>
+												</div>
+												<div class="col-md-11">
+													<div class="image-text">
+														<h6><a href="#">Isabella</a></h6>
+														<p>I've been planning for this field trip for...</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 home2" id="dash-messages" style="display: none;">
+						<div class="messages">
+							<div class="row name-box">
+								<div class="col-md-12">
+									<div class="">
+										<div class="row identity">
+											<div class="col-md-1">
+												<i id="reverse" class="fa-solid fa-arrow-left"></i>
+											</div>
+											<div class="col-md-1">
+												<div class="image-1">
+												</div>
+											</div>
+											<div class="col-md-10">
+												<div class="name-text">
+													<h6>Tehilla❤</h6>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row text-chat">
+								<div class="col-md-12">
+									<div class="chat-1">
+										<p>Hey, What's up?</p>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="chat-2">
+										<p>I'm doing okay, how about you?</p>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="chat-3">
+										<p>Same <br>Are you done With Mr.Jacob's assignment yet?</p>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="chat-4">
+										<p>Not yet, finishing it today</p>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="chat-5">
+										<p>Guess what?</p>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="chat-6">
+										<p>Sarah said auditions are tomorrow 😊</p>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="chat-7">
+										<p>Yeah she told me, can't wait 😂</p>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="chat-8">
+										<p>Same here</p>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="chat-9">
+										<p>What time is Geography class?</p>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="row m-box">
+										<div class="col-md-12">
+											<div class="message-box">
+												<a class="emoji" href="#"><i class="fa-solid fa-face-smile"></i></a>
+												<textarea class="textarea" placeholder="Message"></textarea>
+											</div>
+											<div class="reply">
+												<div class="send-icon">
+													<i class="fa-solid fa-paper-plane"></i>
+												</div>
+												<div class="record-icon">
+													<i class="fa-solid fa-microphone"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+   
+	<div class="container-fluid desktop-view">
+
+		<div id="desktop-drop" style="display: none;">
+			<div style="position: absolute; width: 300px; min-height: 100vh; background-color: white; right: 0px; top: 0; z-index: 100;">
+				<div style="padding: 10px">
+					<div>
+						<i id="desktop-close"class="fa-solid fa-xmark"></i>
+						<ul class="desktop-m2">
+							<li class="desktop-link"><i class="fa-solid fa-table-columns"></i> <a href="dashboard.html">Dashboard</a></li>
+							<li class="desktop-link"><i class="fa-solid fa-file"></i> <a href="classes.html">Classes</a></li>
+							<li class="desktop-link"><i class="fa-solid fa-calendar" id="icon1"></i> <a href="#" id="desktop-link">Planning</a></li>
+							<li class="desktop-link"><i class="fa-solid fa-house"></i> <a href="index.html">Home</a></li>
+						</ul>
+					</div>
+				</div>
+		    </div>
+	    </div>
+
+		<div class="row">
+			<div class="col-md-3 home1">
+				<div class="chat">
+					<div class="row chat-row">
+						<div class="col-md-12">
+							<div class="chat-box">
+								<div class="chat-line">
+									<div class="row">
+										<div class="col-md-1">
+											<div class="image1">
+											</div>
+										</div>
+										<div class="col-md-11">
+											<div class="image-text">
+												<h6><a href="#">Tehilla❤</a></h6>
+												<p>You: What time is Geography class?</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="chat-line">
+									<div class="row name">
+										<div class="col-md-1">
+											<div class="image2">
+											</div>
+										</div>
+										<div class="col-md-11">
+											<div class="image-text">
+												<h6><a href="#">Sarah</a></h6>
+												<p>Auditions are by 4pm, don't be late...</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="chat-line">
+									<div class="row name">
+										<div class="col-md-1">
+											<div class="image3">
+											</div>
+										</div>
+										<div class="col-md-11">
+											<div class="image-text">
+												<h6><a href="#">Mr Jacob</a></h6>
+												<p>Tell your coursemates, the assignments...</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="chat-line">
+									<div class="row name">
+										<div class="col-md-1">
+											<div class="image4">
+											</div>
+										</div>
+										<div class="col-md-11">
+											<div class="image-text">
+												<h6><a href="#">Victoria</a></h6>
+												<p>Are you in dorm, hit me up 😊</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="chat-line">
+									<div class="row name">
+										<div class="col-md-1">
+											<div class="image5">
+											</div>
+										</div>
+										<div class="col-md-11">
+											<div class="image-text">
+												<h6><a href="#">Jace</a></h6>
+												<p>Hey 😌</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="chat-line">
+									<div class="row name">
+										<div class="col-md-1">
+											<div class="image6">
+											</div>
+										</div>
+										<div class="col-md-11">
+											<div class="image-text">
+												<h6><a href="#">Greg</a></h6>
+												<p>Are you coming for the game tomorrow?</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="chat-line">
+									<div class="row name">
+										<div class="col-md-1">
+											<div class="image7">
+											</div>
+										</div>
+										<div class="col-md-11">
+											<div class="image-text">
+												<h6><a href="#">Rose</a></h6>
+												<p>You: 😂😂😂</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="chat-line">
+									<div class="row name">
+										<div class="col-md-1">
+											<div class="image8">
+											</div>
+										</div>
+										<div class="col-md-11">
+											<div class="image-text">
+												<h6><a href="#">Mrs Winifred</a></h6>
+												<p>Revision for C.A.T starts tomorrow</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="chat-line">
+									<div class="row name">
+										<div class="col-md-1">
+											<div class="image9">
+											</div>
+										</div>
+										<div class="col-md-11">
+											<div class="image-text">
+												<h6><a href="#">Jessica</a></h6>
+												<p>How are you doing?</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="chat-line">
+									<div class="row name">
+										<div class="col-md-1">
+											<div class="image10">
+											</div>
+										</div>
+										<div class="col-md-11">
+											<div class="image-text">
+												<h6><a href="#">Brian</a></h6>
+												<p>I will be at the library by 2</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="chat-line">
+									<div class="row name">
+										<div class="col-md-1">
+											<div class="image11">
+											</div>
+										</div>
+										<div class="col-md-11">
+											<div class="image-text">
+												<h6><a href="#">Basketball Aces🌝 </a></h6>
+												<p>Amelia: Why do we suddenly have a gr...</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="chat-line">
+									<div class="row name">
+										<div class="col-md-1">
+											<div class="image12">
+											</div>
+										</div>
+										<div class="col-md-11">
+											<div class="image-text">
+												<h6><a href="#">Isabella</a></h6>
+												<p>I've been planning for this field trip for...</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9 home2">
+				<div class="messages">
+					<div class="row name-box">
+						<div class="col-md-12">
+							<div class="">
+								<div class="row">
+									<div class="col-md-1">
+										<div class="image-1">
+										</div>
+									</div>
+									<div class="col-md-10">
+										<div class="name-text">
+											<h6>Tehilla❤</h6>
+										</div>
+									</div>
+									<div class="col-md-1 home-icon">
+										<i id="desktop-icon" class="fa-solid fa-bars"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row text-chat">
+						<div class="col-md-12">
+							<div class="chat-1">
+								<p>Hey, What's up?</p>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="chat-2">
+								<p>I'm doing okay, how about you?</p>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="chat-3">
+								<p>Same <br>Are you done With Mr.Jacob's assignment yet?</p>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="chat-4">
+								<p>Not yet, finishing it today</p>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="chat-5">
+								<p>Guess what?</p>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="chat-6">
+								<p>Sarah said auditions are tomorrow 😊</p>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="chat-7">
+								<p>Yeah she told me, can't wait 😂</p>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="chat-8">
+								<p>Same here</p>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="chat-9">
+								<p>What time is Geography class?</p>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="row m-box">
+								<div class="col-md-11">
+									<div class="message-box">
+										<a class="emoji" href="#"><i class="fa-solid fa-face-smile"></i></a>
+										<textarea class="textarea" placeholder="Message"></textarea>
+									</div>
+								</div>
+								<div class="col-md-1 reply">
+									<div class="send-icon">
+										<i class="fa-solid fa-paper-plane"></i>
+									</div>
+									<div class="record-icon">
+										<i class="fa-solid fa-microphone"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="./bootstrap/js/bootstrap.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="./scripts/index.js"></script>
+</body>
+</html>

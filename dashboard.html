@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="./css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<link rel="icon" type="image/png" sizes="32x32" href="images/uniford.png"> 
+</head>
+<body>
+	<div class="container-fluid navigation">
+		<div class="mobile-view" style="width: 100%; ">
+			<div style="position: fixed; display: flex; background-color: white; height: 50px; top: 0; z-index: 10; margin-left: -11px; width: 100%; border-bottom: 1px solid #ff004f">
+				<div class="logo">
+					<h3><strong>UNI<span>FORD</span></strong></h3>
+				</div>
+				<div style="width: 100%; text-align: right; padding-right: 15px; padding-top: 9px;">
+					<span style="cursor: pointer">
+						<i id="dash-menu" style="color: black !important" class="bi bi-list"></i>
+					</span>
+				</div>
+			</div>
+
+			<div id="dash-drop" style="display: none;">
+				<div style="position: absolute; width: 100%; min-height: 100vh; background-color: white; right: 0px; top: 0; z-index: 100;">
+					<div style="padding: 10px">
+						<div>
+							<i id="dash-close"class="fa-solid fa-xmark"></i>
+							<ul class="dash-m2">
+								<li class="link1"><i class="fa-solid fa-calendar"></i> <a href="classes.html">Classes</a></li>
+								<li class="link1"><i class="fa-solid fa-calendar"></i> <a href="plan.html">Planning</a></li>
+								<li class="link1"><i class="fa-solid fa-message"></i> <a href="message.html">Messages</a></li>
+								<li class="link1"><i class="fa-solid fa-house"></i> <a href="index.html">Home</a></li>
+							</ul>
+						</div>
+					</div>
+			    </div>
+		    </div>
+
+		    <div class="container-fluid mobile-home">
+		    	<div class="row">
+		    		 <div class="col-md-12 home2">
+						<div class="dashboard">
+							<h5 id="dash-title">Dashboard <i class="fa-solid fa-magnifying-glass icon2"></i></h5>
+							<div class="box1">
+								<div class="row">
+									<div class="col-md-9">
+										<div class="dash-text">
+											<h5>Welcome back Jacinta!</h5>
+											<p>You have take 13 courses since the beginning of this semester and gotten 10 distinctions so far. Keep it that way!</p>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="dash-img">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="subjects">
+								<p>Classes</p>
+								<div class="row">
+									<div class="col-md-4">
+										<div class="sub1">
+											<h6>Mathematics</h6>
+											<p id="p1">Mr Jacob</p>
+											<p id="p2">34 students</p>
+											<div class="sub-text">
+												<p>Sessions <i class="fa-solid fa-arrow-right"></i></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="sub1">
+											<h6>Economics</h6>
+											<p id="p1">Miss Rose</p>
+											<p id="p2">45 students</p>
+											<div class="sub-text">
+												<p>Sessions <i class="fa-solid fa-arrow-right"></i></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="sub1">
+											<h6>History</h6>
+											<p id="p1">Mrs Winifred</p>
+											<p id="p2">52 students</p>
+											<div class="sub-text">
+												<p>Sessions <i class="fa-solid fa-arrow-right"></i></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="container-fluid mobile-chart">
+						    	<div class="row">
+						    		<div class="col-md-12">
+						    			 <div class="sub2 position-relative start-50 translate-middle-x">
+											<div class="row">
+												<div class="col-7 text-1">
+													<h6 id="text-1">Latest Courses</h6>
+												</div>
+												<div class="col-5 text-2">
+													<p>See more <i class="fa-solid fa-arrow-right"></i></p>
+												</div>
+											</div>
+											<div class="row text3">
+												<div class="col-md-12">
+													<div class="course-p">
+														<p><span>Course 7:</span>Mathematics</p>
+														<div class="rate1">
+															<div class="rate2">
+															</div>
+														</div>
+														<div class="rate3">
+															<h6 style="color: blue;">40%</h6>
+														</div>
+													</div>
+													<div class="course-p">
+														<p><span>Course 5:</span>Economics</p>
+														<div class="rate11">
+															<div class="rate4">
+															</div>
+														</div>
+														<div class="rate5">
+															<h6 style="color: red;">23%</h6>
+														</div>
+													</div>
+													<div class="course-p">
+														<p><i class="fa-solid fa-circle-check"></i> <span>Course 4:</span>Economics.</p>
+														<div class="rate11 rate-m">
+															<div class="rate6">
+															</div>
+														</div>
+														<div class="rate7">
+															<h6 style="color: #ff004f;">100%</h6>
+														</div>
+													</div>
+													<div class="course-p">
+														<p><span>Course 4:</span>History</p>
+														<div class="rate-11">
+															<div class="rate8">
+															</div>
+														</div>
+														<div class="rate12">
+															<h6 style="color: green;">62%</h6>
+														</div>
+													</div>
+													<div class="course-p">
+														<p><span>Course 7:</span>Philosophy</p>
+														<div class="rate111">
+															<div class="rate9">
+															</div>
+														</div>
+														<div class="rate12">
+															<h6 style="color: yellow;">80%</h6>
+														</div>
+													</div>
+													<div class="course-p">
+														<p><span>Course 5:</span>Geography</p>
+														<div class="rate11">
+															<div class="rate10">
+															</div>
+														</div>
+														<div class="rate5">
+															<h6 style="color: orange;">71%</h6>
+														</div>
+													</div>
+													<div class="course-p">
+														<p><i class="fa-solid fa-circle-check"></i> <span>Course 8:</span>Biology</p>
+														<div class="rate111">
+															<div class="rate6">
+															</div>
+														</div>
+														<div class="rate13">
+														<h6 style="color: #ff004f;">100%</h6>
+													</div>
+													</div>
+												</div>
+											</div>
+										</div>
+						    		</div>
+						    	</div>
+						    </div>
+
+						    <div class="container-fluid mobile-chart">
+						    	<div class="row">
+						    		<div class="col-md-12">
+										<div class="sub2 chart2 position-relative start-50 translate-middle-x">
+											<div class="row">
+												<div class="col-7 text-1">
+													<h6>Statistics</h6>
+												</div>
+												<div class="col-5 text-2">
+													<p>See more <i class="fa-solid fa-arrow-right"></i></p>
+												</div>
+											</div>
+											<p id="p2">Your notes in relation to the class</p>
+											<div class="row graph">
+												<div class="col-md-12 graph-row">
+													<div class="row-1">
+														<div class="graph-text1">
+															<p id="no1">15</p>
+															<div class="graph1"></div>
+														</div>
+														<div class="graph-text2">
+															<p id="no1">13</p>
+															<div class="graph2"></div>
+														</div>
+														<p class="sub-chart">Mathematics</p>
+													</div>
+													<div class="row-2">
+														<div class="graph-text1">
+															<p id="no1">15</p>
+															<div class="graph1"></div>
+														</div>
+														<div class="graph-text3">
+															<p id="no1">17</p>
+															<div class="graph3"></div>
+														</div>
+														<p class="sub-chart" id="no2">Economics</p>
+													</div>
+													<div class="row-3">
+														<div class="graph-text1">
+															<p id="no1">15</p>
+															<div class="graph1"></div>
+														</div>
+														<div class="graph-text4">
+															<p id="no1">11</p>
+															<div class="graph4"></div>
+														</div>
+														<p class="sub-chart no3" id="no2">History</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+						    	</div>
+						    </div>
+						</div>
+					</div>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2 home1 desktop-view">
+				<div class="logo">
+						<h4><strong>UNI<span>FORD</span></strong></h4>
+					</div>
+				<div class="links">
+					<ul>
+						<li class="link1"><i class="fa-solid fa-table-columns" id="icon1"></i> <a id="link1" href="#">Dashboard</a></li>
+						<li class="link1"><i class="fa-solid fa-file"></i> <a href="classes.html">Classes</a></li>
+						<li class="link1"><i class="fa-solid fa-calendar"></i> <a href="plan.html">Planning</a></li>
+						<li class="link1"><i class="fa-solid fa-message"></i> <a href="message.html">Messages</a></li>
+					</ul>
+				</div>
+				<div class="return">
+					<p><a href="index.html">Go back to home</a> <i class="fa-solid fa-arrow-right"></i></p>
+				</div>
+			</div>
+			<div class="col-md-7 home2 desktop-home">
+				<div class="dashboard">
+					<h5>Dashboard <i class="fa-solid fa-magnifying-glass icon2"></i></h5>
+					<div class="box1">
+						<div class="row">
+							<div class="col-md-9">
+								<div class="dash-text">
+									<h5>Welcome back Jacinta!</h5>
+									<p>You have take 13 courses since the beginning of this semester and gotten 10 distinctions so far. Keep it that way!</p>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="dash-img">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="subjects">
+						<p>Classes</p>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="sub1">
+									<h6>Mathematics</h6>
+									<p id="p1">Mr Jacob</p>
+									<p id="p2">34 students</p>
+									<div class="sub-text">
+										<p>Sessions <i class="fa-solid fa-arrow-right"></i></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="sub1">
+									<h6>Economics</h6>
+									<p id="p1">Miss Rose</p>
+									<p id="p2">45 students</p>
+									<div class="sub-text">
+										<p>Sessions <i class="fa-solid fa-arrow-right"></i></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="sub1">
+									<h6>History</h6>
+									<p id="p1">Mrs Winifred</p>
+									<p id="p2">52 students</p>
+									<div class="sub-text">
+										<p>Sessions <i class="fa-solid fa-arrow-right"></i></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="courses desktop-chart">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="sub2">
+									<div class="row">
+										<div class="col-7 text-1">
+											<h6 id="text-1">Latest Courses</h6>
+										</div>
+										<div class="col-5 text-2">
+											<p>See more <i class="fa-solid fa-arrow-right"></i></p>
+										</div>
+									</div>
+
+									<div class="row text3">
+										<div class="col-md-7">
+											<div class="course-p">
+												<p><span>Course 7:</span>Mathematics</p>
+											</div>
+											<div class="course-p">
+												<p><span>Course 5:</span>Economics</p>
+											</div>
+											<div class="course-p">
+												<p><i class="fa-solid fa-circle-check"></i> <span>Course 4:</span>Economics.</p>
+											</div>
+											<div class="course-p">
+												<p><span>Course 4:</span>History</p>
+											</div>
+											<div class="course-p">
+												<p><span>Course 7:</span>Philosophy</p>
+											</div>
+											<div class="course-p">
+												<p><span>Course 5:</span>Geography</p>
+											</div>
+											<div class="course-p">
+												<p><i class="fa-solid fa-circle-check"></i> <span>Course 8:</span>Biology</p>
+											</div>
+										</div>
+										<div class="col-md-3 course-rate">
+											<div class="rate1">
+												<div class="rate2">
+												</div>
+											</div>
+											<div class="rate11">
+												<div class="rate4">
+												</div>
+											</div>
+											<div class="rate11">
+												<div class="rate6">
+												</div>
+											</div>
+											<div class="rate-11">
+												<div class="rate8">
+												</div>
+											</div>
+											<div class="rate111">
+												<div class="rate9">
+												</div>
+											</div>
+											<div class="rate11">
+												<div class="rate10">
+												</div>
+											</div>
+											<div class="rate111">
+												<div class="rate6">
+												</div>
+											</div>
+										</div>
+										<div class="col-md-2 course-rate2">
+											<div class="rate3">
+												<h6 style="color: blue;">40%</h6>
+											</div>
+											<div class="rate5">
+												<h6 style="color: red;">23%</h6>
+											</div>
+											<div class="rate7">
+												<h6 style="color: #ff004f;">100%</h6>
+											</div>
+											<div class="rate12">
+												<h6 style="color: green;">62%</h6>
+											</div>
+											<div class="rate12">
+												<h6 style="color: yellow;">80%</h6>
+											</div>
+											<div class="rate5">
+												<h6 style="color: orange;">71%</h6>
+											</div>
+											<div class="rate13">
+												<h6 style="color: #ff004f;">100%</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 desktop-chart">
+								<div class="sub2">
+									<div class="row">
+										<div class="col-7 text-1">
+											<h6>Statistics</h6>
+										</div>
+										<div class="col-5 text-2">
+											<p>See more <i class="fa-solid fa-arrow-right"></i></p>
+										</div>
+									</div>
+									<p id="p2">Your notes in relation to the class</p>
+									<div class="row graph">
+										<div class="col-md-4">
+											<div class="row">
+												<div class="col-md-6">
+													<div class="graph-text1">
+														<p id="no1">15</p>
+														<div class="graph1"></div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="graph-text2">
+														<p id="no1">13</p>
+														<div class="graph2"></div>
+													</div>
+												</div>
+												<p>Mathematics</p>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="row">
+												<div class="col-md-6">
+													<div class="graph-text1">
+														<p id="no1">15</p>
+														<div class="graph1"></div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="graph-text3">
+														<p id="no1">17</p>
+														<div class="graph3"></div>
+													</div>
+												</div>
+												<p id="no2">Economics</p>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="row">
+												<div class="col-md-6">
+													<div class="graph-text1">
+														<p id="no1">15</p>
+														<div class="graph1"></div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="graph-text4">
+														<p id="no1">11</p>
+														<div class="graph4"></div>
+													</div>
+												</div>
+												<p id="no2">History</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 home3">
+				<div class="activity">
+					<h5>Activity</h5>
+					<div class="act-text">
+						<p>- Today</p>
+						<p>11:30</p>
+						<p id="act-p"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span>You particitpated in</span> course 7 of Mathematics.</p>	
+					</div>
+					<div class="act-text2">
+						<p>10:30</p>
+						<p id="act-p"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span>You particitpated in</span> course 5 of Economics.</p>	
+					</div>
+					<div class="act-text2">
+						<p>9:30</p>
+						<p id="act-p"><i class="fa-solid fa-circle-check"></i></i> <span>You achieved in</span> course 4 of Economics.</p>	
+					</div>
+					<div class="act-text">
+						<p>- Yesterday</p>
+						<p>16:00</p>
+						<p id="act-p"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span>You particitpated in</span> course 7 of History.</p>	
+					</div>
+					<div class="act-text2">
+						<p>15:00</p>
+						<p id="act-p"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span>You particitpated in</span> course 8 of Geography.</p>	
+					</div>
+					<div class="act-text2">
+						<p>13:00</p>
+						<p id="act-p"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span>You particitpated in</span> course 8 of Philosophy.</p>	
+					</div>
+					<div class="act-text2">
+						<p>12:00</p>
+						<p id="act-p"><i class="fa-solid fa-circle-check"></i></i> <span>You achieved in</span> course 6 of History.</p>	
+					</div>
+					<div class="act-text2">
+						<p><i class="fa-solid fa-circle-check"></i></i> <span>You achieved in</span> course 7 of Biology.</p>	
+					</div>
+					<div class="act-text2">
+						<p>10:00</p>
+						<p id="act-p"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span>You particitpated in</span> course 6 of Mathematics.</p>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="./bootstrap/js/bootstrap.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="./scripts/index.js"></script>
+</body>
+</html>
